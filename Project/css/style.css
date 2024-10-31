@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-color: rgba(38, 38, 38, 1);
+    --highlight-color1: rgba(0, 0, 0, 1);
+    --highlight-color2: rgba(255, 195, 0, 1);
+    --highlight-color3: rgba(121, 163, 61);
+    --highlight-color4: rgb(218, 72, 92);
+    --fonts-style1: 'Poppins';
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-color);
+    font-family: var(--fonts-style1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation bar styling! */
+
+nav {
+    background-color: var(--highlight-color1);
+    height: 110px;
+    width: 100%;
+}
+
+.logo {
+    background-color: var(--highlight-color2);
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    top: 30px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow: 0 0 0 15px black;
+    z-index: 2;
+}
+
+.logo p {
+    text-align: center;
+    margin: 5px 5px;
+    font-weight: 700;
+    border-bottom: 3px solid black;
+}
+
+nav .nav-left {
+    width: 50%;
+    height: 110px;
+    float: left;
+}
+
+.nav-left ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 2.5vmin;
+    height: 105px;
+}
+
+.nav-left li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav .nav-right {
+    width: 50%;
+    height: 110px;
+    float: right;
+}
+
+.nav-right ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 105px;
+    font-size: 2.5vmin;
+}
+
+.nav-right li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li a:hover {
+    color: var(--highlight-color3);
+    text-shadow: 0 0 15px var(--highlight-color3);
+}
+
+/* Main section styling  */
+
+
+
+.main-section img {
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+}
+
+.cover{
+    z-index: 1;
+    height: 450px;
+    width: 100%;
+    position: absolute;
+    background-color: var(--highlight-color2);
+    top: 40%;
+    opacity: .2;
+}
+
+.cover2 {
+    height: 400px;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+
+.cover2 span {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    width: 50%;
+}
+
+.scrollBtn {
+    position: absolute;
+    bottom: 0;
+    font-size: 50px;
+}
+
+.scrollBtn a {
+    text-decoration: none;
+    color: white;
+}
+
+/* second section styling */
+
+#Menu-section {
+    min-height: 70vh;
+    width: 100%;
+}
+
+/* Card styling */
+.card {
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 20px 50px;
+    position: relative;
+}
+
+.productImg {
+    height: 125px;
+    width: 250px;
+    background-color: var(--highlight-color2);
+    position: relative;
+    top: 30px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.card .product {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    right: 12px;
+    top: 12px;
+}
+
+.card .product img {
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+}
+
+.card .productDesc {
+    position: relative;
+    top: 50px;
+    width: 260px;
+    left: 20px;
+    right: 20px;
+    font-size: 15px;
+    height: 150px;
+    overflow: auto;
+}
+
+.card .productTitle {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    top: 35px;
+    left: 30px;
+    height: 50px;
+    width: 50px;
+}
+
+.productPrice {
+    height: 40px;
+    width: 100px;
+    background-color: var(--highlight-color2);
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Menu-section h2 {
+    width: fit-content;
+    margin: 20px;
+    color: var(--highlight-color2);
+    border-bottom: solid 3px;
+}
+
+.central-div{
+    display: flex;
+    justify-content: center;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* third section / customized order section */
+
+#customizedOrder {
+    min-height: fit-content;
+    width: 100%;
+}
+
+.orderForm {
+    display: flex;
+    justify-content: center;
+}
+
+#customizedOrder h2 {
+    color: var(--highlight-color2);
+    border-bottom: 3px solid;
+}
+
+form {
+    height: fit-content;
+    width: 700px;
+    margin: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: var(--highlight-color2);
+    
+}
+
+form h3 {
+    text-align: center;
+    margin: 10px;
+}
+
+.orderForm .info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+
+.inputfield input {
+    height: 30px;
+    width: 200px;
+    margin-top: 10px;
+    border: none;
+    font-size: 17px;
+    border-bottom: solid 2px;
+    background-color: transparent;
+    font-family: var(--fonts-style1);
+    outline: none;
+}
+
+form input:active ~ .userInput,
+form input:focus ~ .userInput,
+form input:valid ~ .userInput{
+    position: relative;
+    top: -45px;
+    color: black;
+    font-size: 12px;
+}
+
+.inputfield {
+    margin: 0 10px;
+}
+
+.inputfield .userInput {
+    position: relative;
+    top: -30px;
+    left: 5px;
+    color: rgba(0, 0, 0, 0.623);
+    font-family: var(--fonts-style1);
+    pointer-events: none;
+    transition: all .3s ease;
+}
+
+.lists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.MenuList {
+    position: relative;
+    height: 15rem;
+    width: 15rem;
+    margin: 0.5rem;
+}
+
+.MenuList input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+    z-index: 4;
+    opacity: 0;
+}
+
+.MenuList .radioTile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border: 1px solid;
+    border-radius: 10px;
+    transition: all 300ms ease;
+}
+
+.MenuList img {
+    height: 10rem;
+    width: 13rem;
+    border-radius: 10px;
+}
+
+.MenuList label {
+    padding-top: 5px;
+    text-transform: capitalize;
+}
+
+.MenuList input:checked + .radioTile {
+    background-color: var(--highlight-color3);
+    box-shadow: 0 0 20px white;
+}
+
+.MenuList input:hover + .radioTile {
+    box-shadow: 0 0 20px white;
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+
+.sides {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 50px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.sides .sideLists {
+    width: 170px;
+    height: 50px;
+}
+
+#orderForm .btns {
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+
+.checkData {
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 0;
+}
+
+#orderForm .btns a {
+    text-decoration: none;
+    color: white;
+}
+
+#orderForm .btns button {
+    margin: 0 20px;
+    font-family: var(--fonts-style1);
+    color: white;
+}
+
+#orderForm .btns .submitBtn {
+    height: 40px;
+    width: 120px;
+    background-color: var(--highlight-color3);
+    border-radius: 20px;
+}
+
+#orderForm .btns .clearBtn {
+    height: 40px;
+    width: 120px;
+    background-color: var(--highlight-color4);
+    border-radius: 20px;
+}

@@ -1,0 +1,62 @@
+:root {
+    --main-color: rgba(38, 38, 38, 1);
+    --highlight-color1: rgba(0, 0, 0, 1);
+    --highlight-color2: rgba(255, 195, 0, 1);
+    --highlight-color3: rgba(121, 163, 61);
+    --highlight-color4: rgb(218, 72, 92);
+    --fonts-style1: 'Poppins';
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+}
+
+th {
+    background-color: var(--highlight-color4);
+    text-align: left;
+    padding: 0 10px;
+}
+
+tr {
+    background-color: white;
+    height: 50px;
+    font-size: 1.2rem;
+}
+
+td {
+    padding: 0 10px;
+    width: 100%;
+    height: fit-content;
+}
+
+td:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+td a {
+    padding: 0 20px;
+    font-size: 20px;
+    
+}
+
+td input {
+    border: none;
+    font-size: 1.2rem;
+    width: 200px;
+}
+
+td:nth-child(6) input {
+    width: fit-content;
+}
+
+
+td input:disabled {
+    color: black;
+}
+
