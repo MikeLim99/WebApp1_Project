@@ -2,6 +2,7 @@
 #Burger Restaurant
 
 #owner Michael Angelo E. Lim 22013013410
+#course code : IT6314
 #CRUD Operations
   $Create - ../pages/index.html
   $Read - ../adminpage/orderdata.php
